@@ -13,9 +13,7 @@ MIN_DELAY = 0.08
 MAX_DELAY = 0.35
 
 def clicker():
-    """
-    Arka planda çalışan tıklama fonksiyonu
-    """
+
     global clicking, exit_program
 
     while not exit_program: #works till you exit
@@ -29,17 +27,13 @@ def clicker():
             time.sleep(0.1)  
 
 def toggle_clicking():
-    """
-    F8 ile tıklamayı aç/kapat
-    """
+
     global clicking
     clicking = not clicking
     print("Clicking aktif mi?:", clicking)
 
 def stop_program():
-    """
-    F9 ile programdan tamamen çık
-    """
+
     global exit_program
     exit_program = True
     print("Program kapatılıyor...")
